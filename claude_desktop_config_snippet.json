@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "wordpress-doenerdate": {
+      "url": "https://www.doenerdate.de/wp-json/mcp/mcp-adapter-default-server",
+      "headers": {
+        "Authorization": "Basic DEIN_BASE64_HIER"
+      }
+    }
+  }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ANLEITUNG:
+//
+// 1. Base64 deiner WordPress-Credentials generieren:
+//    Öffne ein Terminal und führe aus:
+//
+//      echo -n "metin:DEIN_APPLICATION_PASSWORD" | base64
+//
+//    Das APPLICATION_PASSWORD ist das gespeicherte "Claude MCP"-Passwort
+//    aus WordPress Admin → Profil → Anwendungspasswörter
+//    (Format: xxxx xxxx xxxx xxxx xxxx xxxx)
+//
+// 2. Den output von base64 oben als "DEIN_BASE64_HIER" eintragen.
+//
+// 3. Die fertige claude_desktop_config.json liegt hier:
+//    ~/Library/Application Support/Claude/claude_desktop_config.json
+//
+//    Falls die Datei bereits andere mcpServers enthält:
+//    → Nur den "wordpress-doenerdate"-Block in das bestehende
+//      "mcpServers"-Objekt einfügen (nicht die gesamte Datei ersetzen!)
+//
+// 4. Claude Desktop neu starten (Cmd+Q → neu öffnen).
+// ─────────────────────────────────────────────────────────────────────────────
