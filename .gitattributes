@@ -1,0 +1,19 @@
+* text=auto eol=lf
+
+*.md text
+*.txt text
+*.json text
+*.yml text
+*.yaml text
+
+*.mp3 binary
+*.m4a binary
+*.mp4 binary
+*.wav binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary
+*.pdf binary
+*.asd binary
